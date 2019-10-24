@@ -28,7 +28,17 @@ def list_of_directors(source)
   # Write this implementation
 end
 
-def total_gross(source)
+def total_gross(source
+  director_list = list_of_directors(source)
+  director_total = directors_totals(source)
+  
+  director_total.each do |key, value|
+    if director_list.include?(key)
+      total += value
+    end
+  end
+  return total
+end
   # Write this implementation
   #
   # Should use methods:
